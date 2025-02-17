@@ -1,0 +1,32 @@
+{
+	"geode": "4.0.1",
+	"gd": {
+		"win": "2.2074",
+		"android": "2.2074",
+		"mac": "2.2074",
+		"ios": "2.2074"
+	},
+	"id": "jarvisdevil.replacecomment",
+	"name": "ReplaceComment",
+	"version": "1.0.0",
+	"developer": "jarvisdevil",
+	"description": "Replaces text in comments, control the world!",
+	"tags": ["utility"],
+	"settings": {
+		"replaceconf": {
+			"type": "file",
+			"name": "Replacement rules",
+			"description": "Path to the file containing replacement rules",
+			"default": "{mod_config_dir}/replace.txt",
+			"control": {
+				"dialog": "open",
+				"filters": [
+					{
+						"files": ["*.txt"],
+						"description": "Text files"
+					}
+				]
+			}
+		}
+	}
+}
